@@ -322,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 </script>
 
-<!-- Chatbot Toggle Button -->
+<!-- Chatbot Button -->
 <button class="botbutton" onclick="toggleChat()">
   <img src="image/chat-alert1.avif" class="bot-alert1" />
   <img src="image/chat-alert2.avif" class="bot-alert2" />
@@ -341,47 +341,32 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="message-bubble">
         Good Day! How may I be of service?
         <div class="bot-options">
-          <button onclick="addUserMessage('Book an appointment'); addBotReplyWithLink('Sure! You can proceed by clicking the link below:', 'Go to appointment page', 'contact.html');">&#8226; Book an appointment</button>
-          <button onclick="addUserMessage('Visit Facebook Page'); addBotReplyWithLink('Click the link below to visit our Facebook Page:', 'Facebook page', 'https://www.facebook.com/JsgPh');">&#8226; Visit Facebook Page</button>
-          <button onclick="addUserMessage('Check available packages'); addBotReplyWithLink('Click the message below to check our available packages:', 'Packages', '#packages');">&#8226; Check out the package offers</button>
-          <button onclick="addUserMessage('Generate a QR code copy of the pictures'); addBotReplyWithLink('Click the link below to access your photos:', 'QR Code', '#');">&#8226; Generate a QR code copy of the pictures</button>
-          <button onclick="addUserMessage('Report a problem/issue'); addBotReplyWithLink('Here is the link where you can report your problems:', 'Report Issue', 'https://www.facebook.com/messages/t/373469663221561');">&#8226; Report a problem/issue</button>
+          <button onclick="addUserMessage('Book an appointment'); addBotReplyWithLink('Sure! You can proceed by clicking the link below:', 'Go to appointment page', 'contact.html');">
+            • Book an appointment
+          </button>
+          <button onclick="addUserMessage('Visit Facebook Page'); addBotReplyWithLink('Click the link below to visit our Facebook Page:', 'Facebook page', 'https://www.facebook.com/JsgPh');">
+            • Visit Facebook Page
+          </button>
+          <button onclick="addUserMessage('Check available packages'); addBotReplyWithLink('Click the message below to check our available packages:', 'Packages', '#packages');">
+            • Check out the package offers
+          </button>
+          <button onclick="addUserMessage('Generate a QR code copy of the pictures'); addBotReplyWithLink('Click the link below to access your photos:', 'QR Code', ' ');">
+            • Generate a QR code copy of the pictures
+          </button>
+          <button onclick="addUserMessage('Report a problem/issue'); addBotReplyWithLink('Here is the link where you can report your problems:', 'Report Issue', 'https://www.facebook.com/messages/t/373469663221561');">
+            • Report a problem/issue
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Chatbot Overlay -->
+<!-- Overlays -->
 <div class="overlay" id="chatOverlay" onclick="toggleChat()"></div>
 
-<script>
-function toggleChat() {
-  document.getElementById("chatPanel").classList.toggle("show");
-  document.getElementById("chatOverlay").classList.toggle("show");
-}
-
-function addUserMessage(message) {
-  const content = document.querySelector(".chat-content");
-  const userMsg = document.createElement("div");
-  userMsg.className = "user-message";
-  userMsg.innerHTML = `<div class="message-bubble user">${message}</div>`;
-  content.appendChild(userMsg);
-}
-
-function addBotReplyWithLink(text, linkText, linkHref) {
-  const content = document.querySelector(".chat-content");
-  const botReply = document.createElement("div");
-  botReply.className = "bot-message";
-  botReply.innerHTML = `
-    <img src="image/botpic.png" alt="Bot" class="bot-icon" />
-    <div class="message-bubble">
-      ${text}<br>
-      <a href="${linkHref}" class="bot-link" target="_blank">${linkText}</a>
-    </div>`;
-  content.appendChild(botReply);
-}
-</script>
+<!-- JavaScript for Chatbot -->
+<script src="Javascript/home-script.js"></script>
 
 </body>
 </html>
