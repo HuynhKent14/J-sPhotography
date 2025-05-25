@@ -195,7 +195,7 @@ html, body{
 
   
 .tagline .tagline-text{
-  background-image: url("image/slider-img1.avif");
+  background-image: url("../image/slider-img1.avif");
   background-size: cover;
   background-blend-mode:luminosity;
   display: flex;
