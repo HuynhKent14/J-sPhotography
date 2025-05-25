@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Debutants">
             <div class="gallery-text">DEBUTANTS</div>
             <div class="gallery-item">
-              <img src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt0f2507863f18c29d/6668b61c8c2b6b2a84a4423d/18thBirthday-Hero.jpeg?q=70&width=3840&auto=webp" alt="Sweet 18th Birthday" />
+              <img src="Debutant.webp" alt="Sweet 18th Birthday" />
               <p class="image-caption">Sweet 18th Birthday Photoshoots</p>
             </div>
           </div>
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Wedding">
             <div class="gallery-text">WEDDING</div>
             <div class="gallery-item">
-              <img src="https://www.investopedia.com/thmb/Hc1AVuq4b-X0xI-jDNJpkZsUDeg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2119857345-6d19fe3889fd4d7f9a174546f02f6beb.jpg" alt="Wedding" />
+              <img src="Wedding.jpg" alt="Wedding" />
               <p class="image-caption">Wonderous Wedding Prenup Photoshoots</p>
             </div>
           </div>
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Fashion">
             <div class="gallery-text">FASHION</div>
             <div class="gallery-item">
-              <img src="https://entail.fastsimon.com/en-assets/fastsimon/fit-in/700x700/pexelsclintmaliq136343541024x683-1729091512873.webp" alt="Fashion Showcase" />
+              <img src="Fashion.webp" alt="Fashion Showcase" />
               <p class="image-caption">Fashion Showcase</p>
             </div>
           </div>
@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Portrait">
             <div class="gallery-text">PORTRAIT</div>
             <div class="gallery-item">
-              <img src="https://i.pinimg.com/736x/8a/64/b9/8a64b94b6e4e3ecf41f491bfb151277b.jpg" alt="Portrait" />
+              <img src="Portrait.jpg" alt="Portrait" />
               <p class="image-caption">Images of Beautiful Faces</p>
             </div>
           </div>
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Newborn">
             <div class="gallery-text">NEWBORN</div>
             <div class="gallery-item">
-              <img src="https://static.vecteezy.com/system/resources/thumbnails/052/112/653/small_2x/beautiful-newborn-baby-smiling-on-white-cottony-background-photo.jpg" alt="Newborn" />
+              <img src="Newborn.jpg" alt="Newborn" />
               <p class="image-caption">Heartwarming Smiles of Infants</p>
             </div>
           </div>
@@ -268,19 +268,19 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Landscape">
             <div class="gallery-text">LANDSCAPE</div>
             <div class="gallery-item">
-              <img src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2022/01/good-nature-homepage-hero_2-scaled.jpg" alt="Lovely Sceneries" />
+              <img src="Landscape.jpg" alt="Lovely Sceneries" />
               <p class="image-caption">Lovely Sceneries Captured</p>
             </div>
           </div>
-
-          <!-- Extras -->
+          <!-- MACRO PHOTOGRAPHY -->
           <div class="gallery-block" data-category="Macro Photography">
             <div class="gallery-text">MACRO PHOTOGRAPHY</div>
             <div class="gallery-item">
-              <img src="https://i.pinimg.com/736x/5e/81/77/5e817784e0ef17ca5ddee2277e16c34d.jpg" alt="Lovely Sceneries" />
+              <img src="Macro.jpg" alt="Lovely Sceneries" />
               <p class="image-caption">Pay Attention to Cool Details</p>
             </div>
           </div>
+          <!-- Extras -->
           <div class="gallery-block" data-category="Category 7">
             <div class="gallery-text">CATEGORY 7</div>
           </div>
