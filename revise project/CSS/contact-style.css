@@ -221,7 +221,7 @@ html {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-image: url("contact-imgs/lens.png");
+    background-image: url("../contact-imgs/lens.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -322,7 +322,7 @@ html {
     max-width: 100%;
     height: 80%;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
-    url("contact-imgs/background-contact.png");
+    url("../contact-imgs/background-contact.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
