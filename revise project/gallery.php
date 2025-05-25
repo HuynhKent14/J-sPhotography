@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Debutants">
             <div class="gallery-text">DEBUTANTS</div>
             <div class="gallery-item">
-              <img src="Debutant.webp" alt="Sweet 18th Birthday" />
+              <img src="image/Debutant.webp" alt="Sweet 18th Birthday" />
               <p class="image-caption">Sweet 18th Birthday Photoshoots</p>
             </div>
           </div>
@@ -232,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Wedding">
             <div class="gallery-text">WEDDING</div>
             <div class="gallery-item">
-              <img src="Wedding.jpg" alt="Wedding" />
+              <img src="image/Wedding.jpg" alt="Wedding" />
               <p class="image-caption">Wonderous Wedding Prenup Photoshoots</p>
             </div>
           </div>
@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Fashion">
             <div class="gallery-text">FASHION</div>
             <div class="gallery-item">
-              <img src="Fashion.webp" alt="Fashion Showcase" />
+              <img src="image/Fashion.webp" alt="Fashion Showcase" />
               <p class="image-caption">Fashion Showcase</p>
             </div>
           </div>
@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Portrait">
             <div class="gallery-text">PORTRAIT</div>
             <div class="gallery-item">
-              <img src="Portrait.jpg" alt="Portrait" />
+              <img src="image/Portrait.jpg" alt="Portrait" />
               <p class="image-caption">Images of Beautiful Faces</p>
             </div>
           </div>
@@ -259,7 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Newborn">
             <div class="gallery-text">NEWBORN</div>
             <div class="gallery-item">
-              <img src="Newborn.jpg" alt="Newborn" />
+              <img src="image/Newborn.jpg" alt="Newborn" />
               <p class="image-caption">Heartwarming Smiles of Infants</p>
             </div>
           </div>
@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Landscape">
             <div class="gallery-text">LANDSCAPE</div>
             <div class="gallery-item">
-              <img src="Landscape.jpg" alt="Lovely Sceneries" />
+              <img src="image/Landscape.jpg" alt="Lovely Sceneries" />
               <p class="image-caption">Lovely Sceneries Captured</p>
             </div>
           </div>
@@ -276,7 +276,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="gallery-block" data-category="Macro Photography">
             <div class="gallery-text">MACRO PHOTOGRAPHY</div>
             <div class="gallery-item">
-              <img src="Macro.jpg" alt="Lovely Sceneries" />
+              <img src="image/Macro.jpg" alt="Lovely Sceneries" />
               <p class="image-caption">Pay Attention to Cool Details</p>
             </div>
           </div>
@@ -322,51 +322,63 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 </script>
 
-<!-- Chatbot Button -->
 <button class="botbutton" onclick="toggleChat()">
-  <img src="image/chat-alert1.avif" class="bot-alert1" />
-  <img src="image/chat-alert2.avif" class="bot-alert2" />
-  <img src="image/botpic.png" class="botpic" />
-</button>
+      <img src="image/chat-alert1.avif" class="bot-alert1" />
+      <img src="image/chat-alert2.avif" class="bot-alert2" />
+      <img src="image/botpic.png" class="botpic" />
+    </button>
 
-<!-- Chatbot Panel -->
-<div class="chat-panel" id="chatPanel">
-  <div class="chat-header">
-    <h3 class="jbot">J’Bot</h3>
-    <button class="close-btn" onclick="toggleChat()">×</button>
-  </div>
-  <div class="chat-content">
-    <div class="bot-message">
-      <img src="image/botpic.png" alt="Bot" class="bot-icon" />
-      <div class="message-bubble">
-        Good Day! How may I be of service?
-        <div class="bot-options">
-          <button onclick="addUserMessage('Book an appointment'); addBotReplyWithLink('Sure! You can proceed by clicking the link below:', 'Go to appointment page', 'contact.html');">
-            • Book an appointment
-          </button>
-          <button onclick="addUserMessage('Visit Facebook Page'); addBotReplyWithLink('Click the link below to visit our Facebook Page:', 'Facebook page', 'https://www.facebook.com/JsgPh');">
-            • Visit Facebook Page
-          </button>
-          <button onclick="addUserMessage('Check available packages'); addBotReplyWithLink('Click the message below to check our available packages:', 'Packages', '#packages');">
-            • Check out the package offers
-          </button>
-          <button onclick="addUserMessage('Generate a QR code copy of the pictures'); addBotReplyWithLink('Click the link below to access your photos:', 'QR Code', ' ');">
-            • Generate a QR code copy of the pictures
-          </button>
-          <button onclick="addUserMessage('Report a problem/issue'); addBotReplyWithLink('Here is the link where you can report your problems:', 'Report Issue', 'https://www.facebook.com/messages/t/373469663221561');">
-            • Report a problem/issue
-          </button>
+    <!-- Bot Chat Panel QR CODE STILL MISSING LINK-->
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <h3 class="jbot">J’Bot</h3>
+        <button class="close-btn" onclick="toggleChat()">×</button>
+      </div>
+      <div class="chat-content">
+        <div class="bot-message">
+          <img src="image/botpic.png" alt="Bot" class="bot-icon" />
+          <div class="message-bubble">
+            Good Day! How may I be of service?
+            <div class="bot-options">
+              <button
+                onclick="addUserMessage('Book an appointment'); addBotReplyWithLink('Sure! You can proceed by clicking the link below:', 'Go to appointment page', 'contact.php');"
+              >
+                &#8226; Book an appointment
+              </button>
+
+              <button
+                onclick="addUserMessage('Visit Facebook Page'); addBotReplyWithLink('Click the link below to visit our Facebook Page:', 'Facebook page', 'https://www.facebook.com/JsgPh');"
+              >
+                &#8226; Visit Facebook Page
+              </button>
+
+              <button
+                onclick="addUserMessage('Check available packages'); addBotReplyWithLink('Click the message below to check our available packages:', 'Packages', '#packages');"
+              >
+                &#8226; Check out the package offers
+              </button>
+
+              <button
+                onclick="addUserMessage('Generate a QR code copy of the pictures'); addBotReplyWithLink('Click the link below to access your photos:', 'QR Code', ' ');"
+              >
+                &#8226; Generate a QR code copy of the pictures
+              </button>
+
+              <button
+                onclick="addUserMessage('Report a problem/issue'); addBotReplyWithLink('Here is the link where you can report your problems:', 'Report Issue', 'https://www.facebook.com/messages/t/373469663221561');"
+              >
+                &#8226; Report a problem/issue
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Overlays -->
-<div class="overlay" id="chatOverlay" onclick="toggleChat()"></div>
-
-<!-- JavaScript for Chatbot -->
-<script src="Javascript/home-script.js"></script>
+    <!-- Overlay for the ChatBot-->
+    <div class="overlay" id="chatOverlay" onclick="toggleChat()"></div>
+    <!-- JavaScript for Chatbot -->
+    <script src="Javascript/home-script.js"></script>
 
 </body>
 </html>
